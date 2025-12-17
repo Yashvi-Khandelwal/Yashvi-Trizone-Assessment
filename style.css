@@ -1,0 +1,12 @@
+.site-header {
+  background: #fff;
+}
+
+header {
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
