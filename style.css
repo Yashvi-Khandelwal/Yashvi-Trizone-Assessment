@@ -1,12 +1,74 @@
-.site-header {
-  background: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-header {
+.main-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, 1);
+}
 
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 112px;
+height: 100.91px;
+}
 
+.right {
   display: flex;
   justify-content: space-between;
+  width: 750px;
+  height: 55px;
+}
+
+.navItems {
+  padding: 14px 0px;
+}
+
+.main-nav .items {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+}
+
+.main-nav .items li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.main-nav .items li a:hover {
+  border-bottom: 2px solid rgba(0, 85, 210, 1);
 }
 
 
+.schedule-button {
+  width: 223px;
+  height: 55px;
+}
+
+.demo-btn {
+  width: 223px;
+  height: 55px;
+  padding: 18px 36px;
+  gap: 11.2px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-width: 1px;
+  background-color: rgba(0, 85, 210, 1);
+  color: rgba(242, 248, 255, 1);
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
