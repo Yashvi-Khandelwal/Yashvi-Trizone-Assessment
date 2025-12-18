@@ -46,3 +46,26 @@ advantages.forEach(item => {
   container.appendChild(card);
 });
 
+const track = document.getElementById("sliderTrack");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+const cardWidth = 384; 
+let currentPosition = 0;
+
+const maxScroll =
+  track.scrollWidth - document.querySelector(".slider-container").offsetWidth;
+
+prevBtn.addEventListener("click", () => {
+  currentPosition -= cardWidth;
+  if (currentPosition < 0) currentPosition = 0;
+  track.style.transform = `translateX(-${currentPosition}px)`;
+});
+
+nextBtn.addEventListener("click", () => {
+  currentPosition += cardWidth;
+  if (currentPosition > maxScroll) currentPosition = maxScroll;
+  track.style.transform = `translateX(-${currentPosition}px)`;
+});
+
+
